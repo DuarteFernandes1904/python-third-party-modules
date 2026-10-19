@@ -9,8 +9,11 @@ from Bio.Seq import Seq
 # For example, 'ATGGAATAA' gives 'ME'.
 # Hint: create a Seq, use .translate(to_stop=True), then str().
 def translate_dna(dna):
-    # +++your code here+++
-    return
+    sequencia=Seq(dna)
+    sequencia.translate(to_stop=True)
+    return str(sequencia.translate(to_stop=True))
+        
+    
 
 
 # Provided test helper: leave this unchanged.
